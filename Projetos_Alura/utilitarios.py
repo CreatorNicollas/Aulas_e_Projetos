@@ -44,3 +44,31 @@ def subtitulos(texto):
     print(texto)
     print(linha)
     print()
+
+# Sistema de avaliação para os meus atuais e futuros sistemas
+
+def sistema_avaliacao():
+
+    respostas = ("Error 500: Erro interno no meu ego. Vou dar 'Ctrl+Z' na minha vida e fingir que não vi essa nota.", 
+                 "Status 202: Essa nota demorou tanto para processar que parecia o Internet Explorer tentando carregar um GIF.", 
+                 "Sistema está reiniciando... Aguarde", 
+                 "Fico feliz por ter avaliado bem, mas por que não um '5'?", 
+                 "Agradeço pela sua nota 5, isso me ajuda muito a crescer e melhorar. Meu muito obrigado! ☺️")
+
+    while True:
+        try:
+            avaliacao = int(input(f'Olá usúario, qual nota gostaria de estar dando para o código acima usado?\n'))
+
+            if avaliacao == 3:
+                temporizador(3)
+                print(f'Repensou na sua nota? Não? Mas mesmo assim eu agradeço a avaliação')
+
+            if avaliacao >= 1 and avaliacao <= 5:
+                indice = avaliacao - 1
+                print(respostas[indice])
+                break
+
+        except IndexError:
+            print(f'Essa nota é inválida, por favor digite uma nota válida')
+        except ValueError:
+            print(f'Opa, isso é inválido, digite por favor uma nota válida')
