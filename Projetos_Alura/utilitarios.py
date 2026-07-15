@@ -38,7 +38,6 @@ def fim_bonito(texto):
     print(linha)
 
 def subtitulos(texto):
-    os.system('cls')
     linha = '=' * (len(texto) + 4)
     print(linha)
     print(texto)
@@ -55,7 +54,7 @@ def sistema_avaliacao():
                  "Fico feliz por ter avaliado bem, mas por que não um '5'?", 
                  "Agradeço pela sua nota 5, isso me ajuda muito a crescer e melhorar. Meu muito obrigado! ☺️")
 
-    questionar = input(f'Gostaria de avaliar o sistema utilizado acima? (Responda apenas com S ou N)').lower()
+    questionar = input(f'Gostaria de avaliar o sistema utilizado acima? (Responda apenas com S ou N)\n').lower()
 
     if questionar == 's':
         while True:

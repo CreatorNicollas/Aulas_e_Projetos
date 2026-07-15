@@ -2,7 +2,7 @@ from utilitarios import inicio_bonito, fim_bonito, subtitulos, sistema_avaliacao
 
 # Corrigindo posicionamento e nomes em uma lista
 
-inicio_bonito(f'Vamos corrigir uma lista onde você ')
+inicio_bonito(f'Vamos corrigir uma lista onde você colocou um nome errado')
 
 def correcao():
 
