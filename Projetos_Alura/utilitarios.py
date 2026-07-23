@@ -102,7 +102,7 @@ def sistema_avaliacao():
                 avaliacao = int(input(f'Olá usúario, qual nota gostaria de estar dando para o código acima usado?\n'))
 
                 if avaliacao == 3:
-                    barra_loading_temporizada(5, 'O sistema reiniciando')
+                    barra_loading_temporizada(5, 'O sistema está reiniciando')
 
                 if avaliacao >= 1 and avaliacao <= 5:
                     indice = avaliacao - 1
